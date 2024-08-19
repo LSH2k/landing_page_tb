@@ -1,0 +1,100 @@
+@use 'variaveis';
+
+.characters {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__list {
+        margin-top: 44px;
+        display: none;
+        gap: 24px;
+
+        &--is-active {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+
+        &__image {
+            width: 100%;
+            border-radius: 4px;
+
+            &__1 {
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    height: 500px;
+                    object-fit: cover;
+                    object-position: -400px;
+                }
+            }
+
+            &__2 {
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    height: 500px;
+                    object-fit: cover;
+                    object-position: -325px;
+                }
+            }
+
+            &__3 {
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    height: 500px;
+                    object-fit: cover;
+                    object-position: -450px;
+                }
+            }
+
+            &__4 {
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    height: 500px;
+                    object-fit: cover;
+                    object-position: -400px;
+                }
+            }
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 40px;
+        }
+
+        &__button {
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            border: solid 1px variaveis.$corTextoSecundario;
+            border-radius: 5px;
+            padding: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+
+            &--is-active {
+                border-color: variaveis.$corBotaoRed;
+                color: variaveis.$corBotaoRed;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

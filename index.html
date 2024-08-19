@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boys Landing Page</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="dist/images/the_boys_logo.png" alt="The boys logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button">Prime Video</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--secundary">+ The Boys</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <img src="dist/images/the-boys-hero.jpg" alt="The boys banner">
+        </div>
+    </section>
+    <section class="image-text-section">
+        <img src="dist/images/the-boys-img-texto.jpg" alt="The boys banner">
+        <div class="image-text-section__text-container">
+            <h2 class="title">THE BOYS</h2>
+            <p class="text--big">
+                THE BOYS é uma visão irreverente do que acontece quando super-heróis, que são tão populares quanto celebridades, tão influentes quanto políticos e tão reverenciados como deuses, abusam de seus superpoderes ao invés de usá-los para o bem. É o sem poder contra o superpoder, quando os rapazes embarcam em uma jornada heroica para expor a verdade sobre "Os Sete" com o apoio da Vought.
+            </p>
+        </div>
+    </section>
+    <section class="characters">
+        <nav class="characters__tabs">
+            <button data-tab-button="homelander" class="characters__tabs__button characters__tabs__button--is-active">
+                Capitão Pátria
+            </button>
+            <button data-tab-button="billy-butcher" class="characters__tabs__button">
+                Billy Bruto
+            </button>
+            <button data-tab-button="starlight" class="characters__tabs__button">
+                Luz Estrela
+            </button>
+            <button data-tab-button="hughie" class="characters__tabs__button">
+                Hughie
+            </button>
+        </nav>
+        <div data-tab-id="homelander" class="characters__list characters__list--is-active">
+            <img class="characters__list__image characters__list__image__1" src="dist/images/homelander.jpg" alt="Capitão pátria">
+            <p class="text--big">Com o rosto de uma estrela de cinema e superpoderes de um deus, Capitão Pátria é o maior super-herói vivo, além de ser o líder dos Sete. Ele voa, tem superforça, superaudição e pode ver através de quase qualquer material com sua visão de raio-X e para depois destruir tudo com seus olhos laser. Aparentemente, ele é afável, modesto e sincero, um verdadeiro escoteiro, um patriota americano temente a Deus. Mas assim como meros mortais, super-heróis também têm segredos.</p>
+        </div>
+        <div data-tab-id="billy-butcher" class="characters__list">
+            <img class="characters__list__image characters__list__image__2" src="dist/images/billy-butcher.png" alt="Billy Bruto">
+            <p class="text--big">O ex-agente da CIA que virou justiceiro, Billy Butcher, é tão charmoso quanto astuto. Ele é uma força da natureza que pode convencer quase qualquer um a fazer qualquer coisa, seja através de um sorriso ou por força bruta, ou às vezes ambos. Ele é guiado por uma missão de vida: destruir super-heróis. Mas esta vingança pessoal é movida por seu ódio por um super-herói em particular: Homelander. Butcher está decidido a se vingar do Homelander custe o que custar. E não vai deixar ninguém ou nada ficar no seu caminho.</p>
+        </div>
+        <div data-tab-id="starlight" class="characters__list">
+            <img class="characters__list__image characters__list__image__3" src="dist/images/starlight.jpg" alt="Luz Estrela">
+            <p class="text--big">Annie January é extremamente realista e sincera; uma garota com superpoderes. E como Starlight, “A Defensora de Des Moines”, tudo o que ela quer é salvar o mundo, mas enquanto muitas pessoas repetem isso como um clichê brega, ela leva isso ao pé da letra. Então, quando ela é selecionada para se juntar aos Sete, seu sonho se torna realidade. Mas esse sonho se torna seu pior pesadelo quando esta inocente menina do interior chega a Nova York e descobre que o velho ditado é verdade: nunca conheça seus heróis.</p>
+        </div>
+        <div data-tab-id="hughie" class="characters__list">
+            <img class="characters__list__image characters__list__image__4" src="dist/images/hughie.png" alt="Hughie Campbell">
+            <p class="text--big">Hughie tem uma vida medíocre. Ele é um cara educado com um trabalho chato, que ainda mora na casa do pai. No mesmo quarto em que cresceu. A única luz em seu caminho é o amor da sua vida: sua namorada, Robin. Isto é, até um super-herói rápido chamado A-Train atacar Robin, eviscerando e matando a moça no impacto. Desesperado por justiça, Hughie é recrutado pelo vigilante anti-“Supe” Billy Butcher, e o mundo de Hughie vira de cabeça para baixo quando se encontra preso no meio de uma guerra contra super-heróis — que não são nem super nem heróis.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="dist/images/prime_video.png" alt="Prime Video">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="dist/images/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 1996-2024, Amazon.com, Inc. ou suas afiliadas.
+            </p>
+            <p class="text--small">
+                Leandro Sousa
+            </p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

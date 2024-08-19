@@ -1,0 +1,9 @@
+@use 'variaveis';
+
+.hero {
+    &__content {
+        img {
+            width: 100%;
+        }
+    }
+}
